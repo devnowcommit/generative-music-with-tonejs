@@ -339,11 +339,11 @@ var KEYCODE_SPACE = 32,
     KEYCODE_G = 71;
 
 document.addEventListener('keydown', function(event) {
-  event.preventDefault();
-
   if (event.keyCode === KEYCODE_SPACE) {
     toggleTransport();
+    event.preventDefault();
   } else if (event.keyCode === KEYCODE_G) {
     generateMusic();
+    event.preventDefault();
   }
 });
