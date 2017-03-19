@@ -6,7 +6,8 @@ body {
   padding: 0;
 }
 
-body {
+.content {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,4 +136,19 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 #times {
   display: none;
+}
+
+.github-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.playing .github-corner svg {
+  fill: #fff !important;
+}
+
+.playing .github-corner svg .octo-body,
+.playing .github-corner svg .octo-arm {
+  fill: #000 !important;
 }
